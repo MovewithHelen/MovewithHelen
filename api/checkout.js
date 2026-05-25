@@ -13,7 +13,7 @@ export default async function handler(req, res) {
       payment_method_types: ['card'],
       customer_email: email || undefined,
       line_items: [{
-       price: process.env.STRIPE_PRICE_ID || 'price_1TayItBhGmrrlMMrabXvyqp7',
+     price: 'price_1TayQZBhGmrrlMMrzZGUQwKr,
         quantity: 1,
       }],
       success_url: `${process.env.VITE_APP_URL}/success`,
